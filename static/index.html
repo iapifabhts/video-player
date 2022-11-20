@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>video-player</title>
+	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="styles/dialog.css">
+	<link rel="stylesheet" href="styles/player.css">
+	<link rel="stylesheet" href="styles/items.css">
+	<link
+		rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0"
+	>
+<body>
+
+<div class="container">
+	<header class="header">
+		<button class="header__button">Upload video</button>
+	</header>
+
+	<video class="player" controls></video>
+
+	<div class="items"></div>
+
+	<div class="dialog">
+		<div class="dialog__content">
+			<form class="dialog__form">
+				<h3 class="form__title">Upload video</h3>
+				<label class="form__input form__input-poster">
+					Upload poster
+					<input type="file">
+				</label>
+				<label class="form__input form__input-video">
+					Upload video
+					<input type="file">
+				</label>
+				<button class="form__button">Upload</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+<script src="scripts/player.js"></script>
+<script src="scripts/items.js"></script>
+<script src="scripts/dialog.js"></script>
+</body>
+</html>

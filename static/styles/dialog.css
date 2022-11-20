@@ -1,0 +1,46 @@
+.dialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(50, 204, 188, .5);
+}
+
+.dialog__content {
+	padding: 30px;
+	background-color: #ffffff;
+	border-radius: var(--radius);
+}
+
+.dialog__form {
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+
+.form__title {
+	color: var(--main-color);
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.form__input {
+	padding: 10px 15px;
+	cursor: pointer;
+	color: var(--main-color);
+	border-radius: var(--radius);
+	border: 2px dashed var(--main-color);
+}
+
+.form__input input {
+	display: none;
+}
+
+.form__button {
+	align-self: flex-end;
+}
